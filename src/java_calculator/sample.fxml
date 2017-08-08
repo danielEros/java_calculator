@@ -190,7 +190,7 @@
          <font>
             <Font name="Monospaced Bold" size="20.0" />
          </font></TextField>
-      <Button id="btnEval" layoutX="24.0" layoutY="381.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="353.0" style="-fx-background-color: #d36a0e;" text="=EGYELLŐ=">
+      <Button id="btnEval" layoutX="24.0" layoutY="381.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="353.0" style="-fx-background-color: #d36a0e;" text="=EGGYELLŐ=">
          <font>
             <Font name="Monospaced Bold" size="20.0" />
          </font>
