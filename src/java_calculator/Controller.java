@@ -4,18 +4,24 @@ import javafx.fxml.FXML;
 import javafx.event.ActionEvent;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import java.util.Timer;
 import java.util.Arrays;
 import java.lang.Math;
+import java.util.TimerTask;
 
 
 public class Controller {
     String number1 = "";
     String number2 = "";
     String operator = "";
+    String memory;
     Boolean isDecimalNum1 = true;
     Boolean isDecimalNum2 = true;
     Boolean overwriteResult = false;
+    Boolean isMemory = true;
+    Boolean isResult = false;
 
+  
     @FXML
     private TextField TextField;
 
@@ -23,7 +29,7 @@ public class Controller {
     @FXML
     private void handleButtonAction(ActionEvent e) {
         String value = ((Button) e.getSource()).getText();
-        String[] digits = {"0", "1", "2",  "3",  "4", "5", "6", "7", "8", "9"};
+        String[] digits = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9"};
         String[] operators = {"/", "+", "-", "*", "MOD", "xʸ"};
         if (value.equals("+/-")  && (number1.equals("") || number1.equals("-") || overwriteResult)){
             if(number1.equals("-")){
@@ -46,7 +52,7 @@ public class Controller {
             }
             TextField.setText(number1 + operator + number2);
         }
-        if (value.equals("=EGGYELLŐ=") && number2 != ""){
+        if (value.equals("=EGGYELLŐ=") && number2 != "") {
             String toTextField = String.valueOf(handleCalculation(number1, number2, operator));
             TextField.setText(toTextField);
             number1 = toTextField;
@@ -55,8 +61,10 @@ public class Controller {
             overwriteResult = true;
             isDecimalNum1 = true;
             isDecimalNum2 = true;
+            isMemory = true;
+            isResult = true;
         }
-        if (value.equals("C") ){
+        if (value.equals("C")) {
             number1 = "";
             number2 = "";
             operator = "";
@@ -64,19 +72,19 @@ public class Controller {
             isDecimalNum1 = true;
             isDecimalNum2 = true;
         }
-        if (Arrays.asList(operators).contains(value) && !number1.equals("") && number2.equals("")){
+        if (Arrays.asList(operators).contains(value) && !number1.equals("") && number2.equals("")) {
             overwriteResult = false;
-            if(number1.substring(number1.length() - 1).equals(".")){
+            if(number1.substring(number1.length() - 1).equals(".")) {
                 number1 = number1.substring(0, number1.length() - 1);
             }
             operator = value;
             TextField.setText(number1 + operator);
         }
-        if (Arrays.asList(digits).contains(value) && operator != ""){
+        if (Arrays.asList(digits).contains(value) && operator != "") {
             number2 += value;
             TextField.setText(number1 + operator + number2);
         }
-        if (Arrays.asList(digits).contains(value) && operator == ""){
+        if (Arrays.asList(digits).contains(value) && operator == "") {
             if (overwriteResult){
                 number1 = "";
                 overwriteResult = false;
@@ -94,6 +102,23 @@ public class Controller {
             isDecimalNum2 = false;
             TextField.setText(number1 + operator + number2);
         }
+        if (value.equals("M") && isResult && isMemory) {
+            Timer timer = new Timer();
+            memory = number1;
+            TextField.setText("Saved to the memory");
+            timer.schedule(new TimerTask() {
+                @Override
+                public void run() {
+                    TextField.setText(number1);
+                }
+            }, 600);
+            System.out.println(memory);
+            isMemory = false;
+        }
+        if (value.equals("M") && !isMemory && number1.length() == 0) {
+            TextField.setText(memory);
+            number1 = memory;
+        }
     }
 
     @FXML
@@ -103,7 +128,7 @@ public class Controller {
         secondNum = Double.parseDouble(num2);
 
         switch (operator) {
-            case "+" :
+            case "+":
                 result = firstNum + secondNum;
                 return result;
             case "-":
@@ -114,7 +139,7 @@ public class Controller {
                 return result;
             case "/":
                 result = firstNum / secondNum;
-                    return result;
+                return result;
             case "MOD":
                 result = firstNum % secondNum;
                 return result;
