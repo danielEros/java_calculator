@@ -231,7 +231,7 @@
             <Insets />
          </opaqueInsets>
       </GridPane>
-      <TextField fx:id="TextField" editable="false" layoutX="24.0" layoutY="14.0" prefHeight="40.0" prefWidth="353.0">
+      <TextField fx:id="TextField" alignment="CENTER_RIGHT" editable="false" layoutX="24.0" layoutY="14.0" prefHeight="40.0" prefWidth="421.0" text="Use me!">
          <font>
             <Font name="Monospaced Bold" size="20.0" />
          </font></TextField>
