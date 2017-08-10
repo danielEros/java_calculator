@@ -24,6 +24,22 @@ public class Controller {
         String value = ((Button) e.getSource()).getText();
         String[] digits = {"0", "1", "2",  "3",  "4", "5", "6", "7", "8", "9"};
         String[] operators = {"/", "+", "-", "*", "MOD", "xʸ"};
+        if (value.equals("+/-") && (number1.equals("") || number1.equals("-"))){
+            if(number1.equals("-")){
+                number1 = "";
+            }else {
+                number1 += "-";
+            }
+            TextField.setText(number1);
+        }
+        if (value.equals("+/-") && (number2.equals("") || number2.equals("-"))){
+            if(number2.equals("-")){
+                number2 = "";
+            }else {
+                number2 += "-";
+            }
+            TextField.setText(number1 + operator + number2);
+        }
         if (value.equals("=EGGYELLŐ=") && number2 != ""){
             String toTextField = String.valueOf(handleCalculation(number1, number2, operator));
             TextField.setText(toTextField);
