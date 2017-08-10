@@ -26,21 +26,21 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Button id="btn8" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #c2cec3;" text="8" GridPane.columnIndex="1">
+            <Button id="btn8" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="60.0" prefWidth="60.0" text="8" GridPane.columnIndex="1">
                <GridPane.margin>
                   <Insets left="13.0" right="5.0" />
                </GridPane.margin>
                <font>
                   <Font name="Monospaced Bold" size="20.0" />
                </font></Button>
-            <Button id="btn9" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #c2cec3;" text="9" GridPane.columnIndex="2">
+            <Button id="btn9" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="60.0" prefWidth="60.0" text="9" GridPane.columnIndex="2">
                <GridPane.margin>
                   <Insets left="13.0" right="5.0" />
                </GridPane.margin>
                <font>
                   <Font name="Monospaced Bold" size="20.0" />
                </font></Button>
-            <Button id="btn7" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #c2cec3;" text="7">
+            <Button id="btn7" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="60.0" prefWidth="60.0" text="7">
                <padding>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </padding>
@@ -50,7 +50,7 @@
                <font>
                   <Font name="Monospaced Bold" size="20.0" />
                </font></Button>
-            <Button id="btn4" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #c2cec3;" text="4" GridPane.rowIndex="1">
+            <Button id="btn4" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="60.0" prefWidth="60.0" text="4" GridPane.rowIndex="1">
                <padding>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </padding>
@@ -60,7 +60,7 @@
                <font>
                   <Font name="Monospaced Bold" size="20.0" />
                </font></Button>
-            <Button id="btn5" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #c2cec3;" text="5" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <Button id="btn5" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="60.0" prefWidth="60.0" text="5" GridPane.columnIndex="1" GridPane.rowIndex="1">
                <padding>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </padding>
@@ -70,7 +70,7 @@
                <font>
                   <Font name="Monospaced Bold" size="20.0" />
                </font></Button>
-            <Button id="btn6" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #c2cec3;" text="6" GridPane.columnIndex="2" GridPane.rowIndex="1">
+            <Button id="btn6" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="60.0" prefWidth="60.0" text="6" GridPane.columnIndex="2" GridPane.rowIndex="1">
                <padding>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </padding>
@@ -80,7 +80,7 @@
                <font>
                   <Font name="Monospaced Bold" size="20.0" />
                </font></Button>
-            <Button id="btn1" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #c2cec3;" text="1" GridPane.rowIndex="2">
+            <Button id="btn1" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="60.0" prefWidth="60.0" text="1" GridPane.rowIndex="2">
                <padding>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </padding>
@@ -90,7 +90,7 @@
                <font>
                   <Font name="Monospaced Bold" size="20.0" />
                </font></Button>
-            <Button id="btn2" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #c2cec3;" text="2" GridPane.columnIndex="1" GridPane.rowIndex="2">
+            <Button id="btn2" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="60.0" prefWidth="60.0" text="2" GridPane.columnIndex="1" GridPane.rowIndex="2">
                <padding>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </padding>
@@ -100,7 +100,7 @@
                <font>
                   <Font name="Monospaced Bold" size="20.0" />
                </font></Button>
-            <Button id="btn3" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #c2cec3;" text="3" GridPane.columnIndex="2" GridPane.rowIndex="2">
+            <Button id="btn3" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="60.0" prefWidth="60.0" text="3" GridPane.columnIndex="2" GridPane.rowIndex="2">
                <padding>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </padding>
@@ -110,21 +110,21 @@
                <font>
                   <Font name="Monospaced Bold" size="20.0" />
                </font></Button>
-            <Button id="btn0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #c2cec3;" text="0" GridPane.rowIndex="3">
+            <Button id="btn0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="60.0" prefWidth="60.0" text="0" GridPane.rowIndex="3">
                <GridPane.margin>
                   <Insets left="13.0" right="5.0" />
                </GridPane.margin>
                <font>
                   <Font name="Monospaced Bold" size="20.0" />
                </font></Button>
-            <Button id="btnFloat" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #c2cec3;" text="." GridPane.columnIndex="1" GridPane.rowIndex="3">
+            <Button id="btnFloat" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="60.0" prefWidth="60.0" text="." GridPane.columnIndex="1" GridPane.rowIndex="3">
                <GridPane.margin>
                   <Insets left="13.0" right="5.0" />
                </GridPane.margin>
                <font>
                   <Font name="Monospaced Bold" size="20.0" />
                </font></Button>
-            <Button id="btnDivide" layoutX="209.0" layoutY="133.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #8b938b;" text="/" textFill="WHITE" GridPane.columnIndex="3">
+            <Button id="btnDivide" layoutX="209.0" layoutY="133.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="60.0" prefWidth="60.0" text="/" textFill="WHITE" GridPane.columnIndex="3">
                <padding>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </padding>
@@ -135,7 +135,7 @@
                   <Font name="Monospaced Bold" size="20.0" />
                </font>
             </Button>
-            <Button id="btnMultiply" layoutX="302.0" layoutY="25.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #8b938b;" text="*" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="1">
+            <Button id="btnMultiply" layoutX="302.0" layoutY="25.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="60.0" prefWidth="60.0" text="*" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="1">
                <padding>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </padding>
@@ -146,7 +146,7 @@
                   <Font name="Monospaced Bold" size="20.0" />
                </font>
             </Button>
-            <Button id="btnSubtract" layoutX="302.0" layoutY="79.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #8b938b;" text="-" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="2">
+            <Button id="btnSubtract" layoutX="302.0" layoutY="79.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="60.0" prefWidth="60.0" text="-" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="2">
                <padding>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </padding>
@@ -157,7 +157,7 @@
                   <Font name="Monospaced Bold" size="20.0" />
                </font>
             </Button>
-            <Button id="btnAdd" layoutX="302.0" layoutY="133.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #8b938b;" text="+" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="3">
+            <Button id="btnAdd" layoutX="302.0" layoutY="133.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="60.0" prefWidth="60.0" text="+" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="3">
                <padding>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </padding>
@@ -168,7 +168,7 @@
                   <Font name="Monospaced Bold" size="20.0" />
                </font>
             </Button>
-            <Button id="btnClear" layoutX="302.0" layoutY="187.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #a50909;" text="C" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="3">
+            <Button id="btnClear" layoutX="302.0" layoutY="187.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="60.0" prefWidth="60.0" text="C" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="3">
                <padding>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </padding>
@@ -179,7 +179,7 @@
                   <Font name="Monospaced Bold" size="20.0" />
                </font>
             </Button>
-            <Button id="btnDivide" layoutX="323.0" layoutY="25.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #336f87;" text="M" textFill="WHITE" GridPane.columnIndex="4">
+            <Button id="btnM" layoutX="323.0" layoutY="25.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="60.0" prefWidth="60.0" text="M" textFill="WHITE" GridPane.columnIndex="4">
                <padding>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </padding>
@@ -190,7 +190,7 @@
                   <Insets left="13.0" right="5.0" />
                </GridPane.margin>
             </Button>
-            <Button id="btnDivide" layoutX="381.0" layoutY="25.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #336f87;" text="+/-" textFill="WHITE" GridPane.columnIndex="4" GridPane.rowIndex="1">
+            <Button id="btnPm" layoutX="381.0" layoutY="25.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="60.0" prefWidth="60.0" text="+/-" textFill="WHITE" GridPane.columnIndex="4" GridPane.rowIndex="1">
                <padding>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </padding>
@@ -201,7 +201,7 @@
                   <Insets left="13.0" right="5.0" />
                </GridPane.margin>
             </Button>
-            <Button id="btnDivide" layoutX="381.0" layoutY="95.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #336f87;" text="MOD" textFill="WHITE" GridPane.columnIndex="4" GridPane.rowIndex="2">
+            <Button id="btnMOD" layoutX="381.0" layoutY="95.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="60.0" prefWidth="60.0" text="MOD" textFill="WHITE" GridPane.columnIndex="4" GridPane.rowIndex="2">
                <padding>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </padding>
@@ -212,7 +212,7 @@
                   <Insets left="13.0" right="5.0" />
                </GridPane.margin>
             </Button>
-            <Button id="btnDivide" layoutX="381.0" layoutY="165.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #336f87;" text="xʸ" textFill="WHITE" GridPane.columnIndex="4" GridPane.rowIndex="3">
+            <Button id="btnXy" layoutX="381.0" layoutY="165.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="60.0" prefWidth="60.0" text="xʸ" textFill="WHITE" GridPane.columnIndex="4" GridPane.rowIndex="3">
                <padding>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </padding>
@@ -235,7 +235,7 @@
          <font>
             <Font name="Monospaced Bold" size="20.0" />
          </font></TextField>
-      <Button id="btnEval" layoutX="24.0" layoutY="381.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="40.0" prefWidth="421.0" style="-fx-background-color: #d36a0e;" text="=EGGYELLŐ=">
+      <Button id="btnEval" layoutX="24.0" layoutY="381.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="40.0" prefWidth="421.0" text="=EGGYELLŐ=">
          <font>
             <Font name="Monospaced Bold" size="20.0" />
          </font>
