@@ -32,7 +32,7 @@ public class Controller {
             }
             TextField.setText(number1);
         }
-        if (value.equals("+/-") && (number2.equals("") || number2.equals("-"))){
+        if (value.equals("+/-") && operator != "" && (number2.equals("") || number2.equals("-"))){
             if(number2.equals("-")){
                 number2 = "";
             }else {
@@ -45,6 +45,7 @@ public class Controller {
             TextField.setText(toTextField);
             number1 = toTextField;
             number2 = "";
+            operator = "";
             isDecimalNum1 = true;
             isDecimalNum2 = true;
         }
@@ -65,6 +66,7 @@ public class Controller {
         }
         if (Arrays.asList(digits).contains(value) && operator != ""){
             number2 += value;
+            System.out.println(number2);
             TextField.setText(number1 + operator + number2);
         }
         if (Arrays.asList(digits).contains(value) && operator == ""){
