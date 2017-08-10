@@ -39,7 +39,7 @@ public class Controller {
             isDecimalNum1 = true;
             isDecimalNum2 = true;
         }
-        if (Arrays.asList(operators).contains(value) && !number1.equals("") ){
+        if (Arrays.asList(operators).contains(value) && !number1.equals("") && number2.equals("")){
             operator = value;
             TextField.setText(number1 + operator);
         }
