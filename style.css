@@ -1,0 +1,64 @@
+.button {
+    -fx-background-color:  #c2cec3;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 2, 0, 3, 2);
+}
+
+.button:hover {
+    -fx-background-color: #9ca89d;
+}
+
+.button:pressed {
+    -fx-background-color: #778378;
+}
+
+#btnEval {
+    -fx-background-color:  #d36a0e;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 2, 0, 3, 2);
+}
+
+#btnEval:hover {
+    -fx-background-color: #c0600c;
+}
+
+#btnEval:pressed {
+    -fx-background-color: #a1510c;
+}
+
+#btnClear {
+    -fx-background-color: #a50909;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 2, 0, 3, 2);
+}
+
+#btnClear:hover {
+    -fx-background-color: #790606;
+}
+
+#btnClear:pressed {
+    -fx-background-color: #5a0606;
+}
+
+#btnDivide, #btnMultiply, #btnSubtract, #btnAdd {
+    -fx-background-color: #8b938b;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 2, 0, 3, 2);
+}
+
+#btnDivide:hover, #btnMultiply:hover, #btnSubtract:hover, #btnAdd:hover {
+    -fx-background-color: #727a72;
+}
+
+#btnDivide:pressed, #btnMultiply:pressed, #btnSubtract:pressed, #btnAdd:pressed {
+    -fx-background-color: #505850;
+}
+
+#btnM, #btnPm, #btnMOD, #btnXy {
+    -fx-background-color:  #336f87;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 2, 0, 3, 2);
+}
+
+#btnM:hover, #btnPm:hover, #btnMOD:hover, #btnXy:hover {
+    -fx-background-color: #2a5a6e;
+}
+
+#btnM:pressed, #btnPm:pressed, #btnMOD:pressed, #btnXy:pressed {
+    -fx-background-color: #24495b;
+}
