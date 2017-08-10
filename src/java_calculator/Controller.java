@@ -5,6 +5,7 @@ import javafx.event.ActionEvent;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import java.util.Arrays;
+import java.lang.Math;
 
 
 public class Controller {
@@ -22,7 +23,7 @@ public class Controller {
     private void handleButtonAction(ActionEvent e) {
         String value = ((Button) e.getSource()).getText();
         String[] digits = {"0", "1", "2",  "3",  "4", "5", "6", "7", "8", "9"};
-        String[] operators = {"/", "+", "-", "*"};
+        String[] operators = {"/", "+", "-", "*", "MOD", "xʸ"};
         if (value.equals("=EGGYELLŐ=") && number2 != ""){
             String toTextField = String.valueOf(handleCalculation(number1, number2, operator));
             TextField.setText(toTextField);
@@ -85,6 +86,12 @@ public class Controller {
             case "/":
                 result = firstNum / secondNum;
                     return result;
+            case "MOD":
+                result = firstNum % secondNum;
+                return result;
+            case "xʸ":
+                result = Math.pow(firstNum, secondNum);
+                return result;
             default:
                 result = 0;
                 return result;
