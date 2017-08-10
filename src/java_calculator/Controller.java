@@ -14,6 +14,7 @@ public class Controller {
     String operator = "";
     Boolean isDecimalNum1 = true;
     Boolean isDecimalNum2 = true;
+    Boolean overwriteResult = false;
 
     @FXML
     private TextField TextField;
@@ -46,6 +47,7 @@ public class Controller {
             number1 = toTextField;
             number2 = "";
             operator = "";
+            overwriteResult = true;
             isDecimalNum1 = true;
             isDecimalNum2 = true;
         }
@@ -66,10 +68,13 @@ public class Controller {
         }
         if (Arrays.asList(digits).contains(value) && operator != ""){
             number2 += value;
-            System.out.println(number2);
             TextField.setText(number1 + operator + number2);
         }
         if (Arrays.asList(digits).contains(value) && operator == ""){
+            if (overwriteResult){
+                number1 = "";
+                overwriteResult = false;
+            }
             number1 += value;
             TextField.setText(number1);
         }
