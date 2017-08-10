@@ -40,24 +40,27 @@ public class Controller {
             isDecimalNum2 = true;
         }
         if (Arrays.asList(operators).contains(value) && !number1.equals("") && number2.equals("")){
+            if(number1.substring(number1.length() - 1).equals(".")){
+                number1 = number1.substring(0, number1.length() - 1);
+            }
             operator = value;
             TextField.setText(number1 + operator);
         }
-        if (Arrays.asList(digits).contains(value) && operator != "" ){
+        if (Arrays.asList(digits).contains(value) && operator != ""){
             number2 += value;
             TextField.setText(number1 + operator + number2);
         }
-        if (Arrays.asList(digits).contains(value) && operator == "" ){
+        if (Arrays.asList(digits).contains(value) && operator == ""){
             number1 += value;
             TextField.setText(number1);
         }
-        if (value.equals(".") && isDecimalNum1 == true && operator == "" ) {
-            number1 += value;
+        if (value.equals(".") && isDecimalNum1 && operator == "") {
+            number1 += (number1.equals("") ? ("0" + value) : value);
             isDecimalNum1 = false;
             TextField.setText(number1);
         }
-        if (value.equals(".") && isDecimalNum2 == true && operator != "" ) {
-            number2 += value;
+        if (value.equals(".") && isDecimalNum2 && operator != "") {
+            number2 += (number2.equals("") ? ("0" + value) : value);
             isDecimalNum2 = false;
             TextField.setText(number1 + operator + number2);
         }
